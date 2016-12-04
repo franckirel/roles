@@ -1,0 +1,8 @@
+---
+- name: Setup networking (general)
+  action: template owner=root group=root mode=644 src=../templates/etc/sysconfig/network dest=/etc/sysconfig/network
+- name: Setup networking (interfaces)
+  action: template owner=root group=root mode=644 src=../templates/etc/sysconfig/network-scripts/ifcfg-interface dest=/etc/sysconfig/network-scripts/ifcfg-${item}
+  with_items: 
+- name: Setup networking (routes)
+  action: template owner=root group=root mode=644 src=../templates/etc/sysconfig/network-scripts/route-interface dest=/etc/sysconfig/network-scripts/route-${net_privateif}

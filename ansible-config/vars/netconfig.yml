@@ -1,0 +1,5 @@
+---
+networks:
+  inet:  { netrange: '198.51.100', prefix: '26', gateway: '1' }
+  srv1:  { netrange: '10.1.1', prefix: '24', 'gateway': '254' }
+  cloud: { netrange: '10.1.2', prefix: '24', 'gateway': '254' }

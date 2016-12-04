@@ -1,0 +1,9 @@
+---
+- name: Make sure the action.d folder exists
+  file:
+    path:   "{{ fail2ban_action_dir }}"
+    owner:  "{{ fail2ban_action_owner }}"
+    group:  "{{ fail2ban_action_group }}"
+    mode:   "{{ fail2ban_action_mode }}"
+    state:  directory
+...

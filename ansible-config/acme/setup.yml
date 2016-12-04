@@ -1,0 +1,3 @@
+---
+- include: ../playbooks/init_new_hosts.yml
+- include: ../playbooks/reboot_new_hosts.yml

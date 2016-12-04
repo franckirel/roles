@@ -1,0 +1,9 @@
+---
+- hosts: newservers
+  user: root
+
+  vars_files:
+   - ../vars/netconfig.yml
+   - ../vars/macs/${ansible_default_ipv4.macaddress}.yml
+  tasks:
+   - include: ../tasks/networking.yml
