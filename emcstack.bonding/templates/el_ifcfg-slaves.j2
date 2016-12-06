@@ -4,7 +4,7 @@ BOOTPROTO=none
 USERCTL=no
 ONBOOT=yes
 SLAVE=yes
-MASTER="{{ bond }}"
+MASTER="{{ bond.name}}"
 {% if mtu is defined %}
 #MTU="{{ mtu }}"
 {% endif %}
