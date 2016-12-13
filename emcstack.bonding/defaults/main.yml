@@ -8,6 +8,7 @@ apply: false
 apply_now: false
 
 el_network_sysconfig: /etc/sysconfig/network-scripts
+deb_network_sysconfig: /etc/network/interfaces
 tmp_dir: /tmp
 
 
