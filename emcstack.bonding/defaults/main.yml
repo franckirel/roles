@@ -2,12 +2,13 @@
 # defaults file for bonding
 
 # Set to true to apply to sysconfig files
-apply: false
+apply: true
 
 # Set to true to restart network service after files creation
 apply_now: false
 
 el_network_sysconfig: /etc/sysconfig/network-scripts
+deb_network_sysconfig: /etc/network/interfaces
 deb_network_sysconfig: /etc/network/interfaces
 tmp_dir: /tmp
 
@@ -30,7 +31,7 @@ mtu: 1500
 
 enable_ipv4: true
 manage_gateway: true
-manage_dns_servers: false
+manage_dns_servers: true
 manage_hw_addr: true
 ip_addr:
 netmask:
@@ -41,8 +42,8 @@ dns2:
 # IPv6 options
 
 enable_ipv6: true
-init_ipv6: yes
-ipv6_autoconf: no
+init_ipv6: false
+ipv6_autoconf: false
 
 # Slaves options
 

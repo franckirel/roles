@@ -20,7 +20,7 @@
 
 
 - name: Create interface 
-  template: src=deb_int.j2 dest="{{ el_network_sysconfig }}"
+  template: src=deb_int.j2 dest="{{ deb_network_sysconfig }}"
   when:
   - apply
   - ("{{ slaves| length }}" >=2)

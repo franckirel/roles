@@ -2,4 +2,6 @@
 # handlers file for bonding
 
 - name: restart network
-  service: name=network state=restarted
+  #service: name=network state=restarted
+   service: name=ntpd state=restarted
+

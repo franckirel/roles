@@ -1,9 +1,9 @@
 galaxy_info:
-  author: John Preston [JMille]
-  description: Bond configuration files creator
+  author: Franck Moubé
+  description: Bond + vlans configuration files creator
   company:
   license: GPLv3
-  min_ansible_version: 1.9
+  min_ansible_version: 2.1
 
   github_branch: master
   platforms:
@@ -11,29 +11,29 @@ galaxy_info:
     versions:
     - 6
     - 7
-  #- name: Ubuntu
-  #  versions:
-  #  - all
-  #  - lucid
-  #  - maverick
-  #  - natty
-  #  - oneiric
-  #  - precise
-  #  - quantal
-  #  - raring
-  #  - saucy
-  #  - trusty
-  #  - utopic
-  #  - vivid
-  #  - wily
-  #- name: Debian
-  #  versions:
-  #  - all
-  #  - etch
-  #  - jessie
-  #  - lenny
-  #  - squeeze
-  #  - wheezy
+  - name: Ubuntu
+    versions:
+    #- all
+    #- lucid
+    #- maverick
+    #- natty
+    #- oneiric
+    - precise
+    #- quantal
+    #- raring
+    #- saucy
+    - trusty
+    #- utopic
+    #- vivid
+    #- wily
+  - name: Debian
+    versions:
+    #- all
+    #- etch
+    #- jessie
+    #- lenny
+    #- squeeze
+    - wheezy
   galaxy_tags:
   - networking
   - bonding
